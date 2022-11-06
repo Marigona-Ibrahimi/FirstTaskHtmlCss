@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sen">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vidaloka">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>FIRSTTASK</title>
 </head>
 <body>
@@ -11,65 +15,80 @@
         <div class="logo">
             <h1>HealthAMP</h1>
         </div>
-        <ul class="menu">
-            <li>About Us</li>
-            <li>Start Here</li>
-            <li>
-                <ul>Our Features
-                    <li>Nutrition</li>
-                    <li>Motivation</li>
-                    <li>Therapy</li>
-                </ul>
-            </li>
-            <li>Help</li>
-        </ul>
-        <div class="social">
-            <ul class="socialmedia">
-                <li class="call"><a href="http://">Call</a></li>
-                <li class="facebook"><a href="http://">Facebook</a></li>
-                <li class="instagram"><a href="http://">Instagram</a></li>
+        <nav>
+            <ul class="menu">
+                <li><a>About Us</a></li>
+                <li><a>Start Here</a></li>
+                <!-- <li>
+                    <ul>Our Features
+                        <li>Nutrition</li>
+                        <li>Motivation</li>
+                        <li>Therapy</li>
+                    </ul>
+                </li> -->
+                <li><a>Help</a></li>
             </ul>
-        </div>
+            <div class="social">
+                <ul class="socialmedia">
+                    <li class="call"><i class="fa fa-phone" style="color: white; background-color: #bb4052; padding: 5px; border-radius: 5px;"></i></li>
+                    <li class="facebook"><i class="fa fa-facebook" style="color: white; background-color: #bb4052; padding: 5px; border-radius: 5px;"></i></li>
+                    <li class="twitter"><i class="fa fa-twitter" style="color: white; background-color: #bb4052; padding: 5px; border-radius: 5px;"></i></li>
+                </ul>
+            </div>
+            <!-- <button id="sidebar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button> -->
+        </nav>
     </header>
     <section class="h-program">
-        <div class="left">
-            <img src="images/04.jpg" alt="">
+        <div class="image-wrapper">
+            <img src="images/04.jpg" alt="">     
         </div>
         <div class="right">
-            <h1>Health Program</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada ut magna vel porta. Praesent consectetur molestie finibus. Fusce vitae urna in quam malesuada rutrum.
-                Aliquam mauris augue, dictum eget lorem at, sodales condimentum risus. Aenean ac leo at nisi malesuada sodales a nec diam. Quisque eget sagittis risus.      
-                Pellentesque luctus viverra odio, dignissim vehicula lorem convallis eu. Aliquam accumsan mauris fermentum.
+            <h3>Health Program</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada ut magna vel porta. Praesent consectetur molestie finibus. Fusce vitae urna in quam malesuada rutrum.<br><br>
+                Aliquam mauris augue, dictum eget lorem at, sodales condimentum risus. Aenean ac leo at nisi malesuada sodales a nec diam. Quisque eget sagittis risus.    <br> <br>
+                <i><span id="italic">Pellentesque luctus viverra odio, dignissim vehicula lorem convallis eu. Aliquam accumsan mauris fermentum.</span></i>
             </p>
-            <button>Get Started --></button>
+            <button>Get Started <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M24 11l-6.7 6.7-1.4-1.4 4.3-4.3H0v-2h20.2l-4.3-4.3 1.4-1.4L24 11z"></path></svg></button>
         </div>
     </section>
     <section class="core-features">
-        <h1>Our Core Features</h1>
+        <h1 id="firsttitle">Our Core Features</h1>
         <div class="articles">
             <span class="first">
-                <img src="" alt="">
-                <h1>Nutrition</h1>
-                <h4>Pellentesque luctus viverra</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor nisi vehicula.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="112" height="112"><path d="M20 13c0-1.2.5-2.1 1.5-2.8l.6-.4-.2-.7c-.4-1.2-1.2-2.2-2.3-2.9C18.5 5.4 17.2 5 16 5c-.8 0-1.4.3-1.9.5-.6.3-1.2.5-2.1.5-.9 0-1.4-.2-1.8-.5C9.7 5.3 9.1 5 8 5c-1.7 0-3.2.7-4.3 2C2.6 8.4 2 10.5 2 13c0 2.4.8 5.1 2.1 7.4.6 1 1.2 1.9 1.9 2.5.7.7 1.4 1.1 2 1.1 1.1 0 1.7-.2 2.4-.5 0 0 1-.5 1.6-.5.6 0 1 .2 1.5.4 0 0 1.4.6 2.5.6.6 0 1.4-.5 1.7-.7.5-.4 1.1-1 1.7-1.7 1.2-1.4 2.1-3.1 2.5-4.7l.2-.7-.6-.4c-1-.6-1.5-1.6-1.5-2.8zm-2.2 7.4c-.9 1.2-1.5 1.6-1.9 1.6-.7 0-1.6-.4-1.6-.4-.6-.3-1.3-.6-2.3-.6-1 0-2.4.6-2.4.6-.5.2-.9.4-1.5.4-.7 0-1.8-1.7-2.3-2.6C4.7 17.5 4 15 4 13c0-2.1.4-3.7 1.3-4.7C6 7.4 6.9 7 8 7c.6 0 .8.1 1.3.3.5.3 1.3.7 2.7.7 1.3 0 2.2-.4 2.9-.7.4-.2.7-.3 1.1-.3.8 0 1.7.3 2.4.8.5.4.9.8 1.2 1.3-1.1 1-1.7 2.4-1.7 3.9 0 1.6.6 3 1.7 4-.3 1.2-1.1 2.3-1.8 3.4zM12.7 4.7l-1.4-1.4 3-3 1.4 1.4-3 3z"></path></svg>       
+                <div class="icons">
+                    <h1>Nutrition</h1>
+                    <h4>Pellentesque luctus viverra</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit auctor nisi vehicula.</p>
+                </div>
             </span>
             <span class="second">
-                <img src="" alt="">
-                <h1>Fitnes</h1>
-                <h4>Pellentesque luctus viverra</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor nisi vehicula.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="112" height="112"><path d="M12 23.1l-9.9-9.9c-2.8-2.8-2.8-7.3 0-10.1C3.4 1.7 5.2 1 7.1 1h.1c1.8 0 3.5.7 4.8 1.9C13.3 1.7 15 1 16.8 1c1.9 0 3.7.7 5.1 2.1C23.3 4.5 24 6.3 24 8.2c0 1.9-.7 3.7-2.1 5L12 23.1zM7.2 3c-1.4 0-2.7.5-3.7 1.5-2 2-2 5.3 0 7.3l8.5 8.5 8.5-8.5c1-1 1.5-2.3 1.5-3.6 0-1.4-.5-2.7-1.5-3.7S18.2 3 16.8 3s-2.7.5-3.7 1.5L12 5.7l-1.2-1.2C9.8 3.5 8.6 3 7.2 3z"></path></svg>
+                <div class="icons">
+                    <h1>Fitnes</h1>
+                    <h4>Pellentesque luctus viverra</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit auctor nisi vehicula.</p>
+                </div>
             </span>
             <span class="third">
-                <img src="" alt="">
-                <h1>Therapy</h1>
-                <h4>Pellentesque luctus viverra</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor nisi vehicula.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="112" height="112"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zM4.9 5H9c.6 0 1 .4 1 1s-.4 1-1 1H5.5C4.1 7 3 8.1 3 9.5S4.1 12 5.5 12H6c.6 0 1 .4 1 1s-.4 1-1 1H2.2c-.1-.6-.2-1.3-.2-2 0-2.7 1.1-5.2 2.9-7zM2.8 16H6c1.7 0 3-1.3 3-3s-1.3-3-3-3h-.5c-.3 0-.5-.2-.5-.5s.2-.5.5-.5H9c1.7 0 3-1.3 3-3s-1.3-3-3-3H7.7C9 2.4 10.4 2 12 2c4.1 0 7.6 2.5 9.2 6H17c-1.7 0-3 1.3-3 3s1.3 3 3 3h.5c.3 0 .5.2.5.5s-.2.5-.5.5H13c-1.7 0-3 1.3-3 3s1.3 3 3 3h3.3c-1.3.6-2.8 1-4.3 1-4.1 0-7.6-2.5-9.2-6zm16.3 3H13c-.6 0-1-.4-1-1s.4-1 1-1h4.5c1.4 0 2.5-1.1 2.5-2.5S18.9 12 17.5 12H17c-.6 0-1-.4-1-1s.4-1 1-1h4.8c.1.6.2 1.3.2 2 0 2.7-1.1 5.2-2.9 7z"></path></svg>
+                <div class="icons">
+                    <h1>Therapy</h1>
+                    <h4>Pellentesque luctus viverra</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit auctor nisi vehicula.</p>
+                </div>
             </span>
             <span class="fourth">
-                <img src="" alt="">
-                <h1>Motivation</h1>
-                <h4>Pellentesque luctus viverra</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor nisi vehicula.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="112" height="112"><path d="M24 3v7h-2V6.4l-9 9-3-3L1.4 21 0 19.6l10-10 3 3L20.6 5H17V3h7z"></path></svg>
+                <div class="icons">
+                    <h1>Motivation</h1>
+                    <h4>Pellentesque luctus viverra</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit auctor nisi vehicula.</p>
+                </div>
             </span>
         </div>
     </section>
@@ -85,12 +104,12 @@
     </section>
     <section class="steps">
         <h1>First Steps</h1>
-        <ul class="step-list">
+        <ol class="step-list">
             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis rutrum metus, ut posuere neque. Fusce faucibus ex non justo pharetra tempus. Integer quam nibh, eleifend sed velit lobortis, dapibus porttitor metus.</li>
             <li>In suscipit justo ipsum, vel aliquet ipsum cursus et. Aliquam blandit ipsum non ullamcorper ultricies. Ut tempor dictum cursus. Donec sapien felis, fringilla sit amet hendrerit quis, blandit molestie est.</li>
             <li>Etiam dignissim, dolor in fringilla efficitur, quam nulla maximus ante, auctor condimentum tellus lectus et ipsum. Fusce ut bibendum leo, nec dictum erat. Etiam sed turpis eros. Maecenas consequat dignissim facilisis.</li>
             <li>Integer a dui eu libero euismod luctus vitae id leo. Proin imperdiet felis a mauris ultrices, nec consectetur est porttitor. Etiam malesuada hendrerit facilisis. Mauris vitae tincidunt nisl, eu efficitur dui.</li>
-        </ul>
+        </ol>
     </section>
     <section class="article2">
         <span class="left3">
@@ -117,39 +136,59 @@
     </section>
     <section class="pathtohealthy">
         <h1>Your path to a Healthy</h1>
-        <span class="path1">
-            <img src="" alt="">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-        </span>
-        <span class="path2">
-            <img src="" alt="">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-        </span>
-        <span class="path3">
-            <img src="" alt="">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-        </span>
+        <div id="paths">
+            <span class="path1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="112" height="112"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 22c-1.2 0-2.6-1.9-3.3-4.8 2.2-.3 4.5-.3 6.7 0-.8 2.9-2.2 4.8-3.4 4.8zm0-20c1.2 0 2.6 1.9 3.3 4.8-2.1.2-4.4.2-6.6 0C9.4 3.9 10.8 2 12 2zM8 12c0-1.2.1-2.3.2-3.3 1.3.2 2.5.3 3.8.3 1.3 0 2.5-.1 3.8-.3.2 1 .2 2.1.2 3.3 0 1.2-.1 2.3-.2 3.3-2.5-.3-5.1-.3-7.5 0-.2-1-.3-2.1-.3-3.3zm9.7-3.6c1.1-.2 2.1-.5 3.2-.9.7 1.4 1.1 2.9 1.1 4.5s-.4 3.1-1.1 4.5c-1.1-.4-2.1-.6-3.2-.9.2-1.1.3-2.3.3-3.6 0-1.3-.1-2.5-.3-3.6zm2.1-2.6c-.8.3-1.6.5-2.5.6-.3-1.4-.8-2.6-1.4-3.6 1.6.7 2.9 1.7 3.9 3zm-11.7-3C7.5 3.8 7 5 6.6 6.4c-.8-.1-1.6-.3-2.4-.6 1-1.3 2.3-2.3 3.9-3zm-5 4.7c1.1.4 2.1.6 3.2.9C6.1 9.5 6 10.7 6 12s.1 2.5.3 3.6c-1.1.2-2.1.5-3.2.9C2.4 15.1 2 13.6 2 12s.4-3.1 1.1-4.5zm1.1 10.7c.8-.3 1.6-.5 2.5-.6.3 1.4.8 2.6 1.4 3.6-1.6-.7-2.9-1.7-3.9-3zm11.7 3c.6-1 1.1-2.2 1.4-3.6.8.2 1.7.4 2.5.6-1 1.3-2.3 2.3-3.9 3z"></path></svg>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </span>
+            <span class="path2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="112" height="112"><path d="M20 13c0-1.2.5-2.1 1.5-2.8l.6-.4-.2-.7c-.4-1.2-1.2-2.2-2.3-2.9C18.5 5.4 17.2 5 16 5c-.8 0-1.4.3-1.9.5-.6.3-1.2.5-2.1.5-.9 0-1.4-.2-1.8-.5C9.7 5.3 9.1 5 8 5c-1.7 0-3.2.7-4.3 2C2.6 8.4 2 10.5 2 13c0 2.4.8 5.1 2.1 7.4.6 1 1.2 1.9 1.9 2.5.7.7 1.4 1.1 2 1.1 1.1 0 1.7-.2 2.4-.5 0 0 1-.5 1.6-.5.6 0 1 .2 1.5.4 0 0 1.4.6 2.5.6.6 0 1.4-.5 1.7-.7.5-.4 1.1-1 1.7-1.7 1.2-1.4 2.1-3.1 2.5-4.7l.2-.7-.6-.4c-1-.6-1.5-1.6-1.5-2.8zm-2.2 7.4c-.9 1.2-1.5 1.6-1.9 1.6-.7 0-1.6-.4-1.6-.4-.6-.3-1.3-.6-2.3-.6-1 0-2.4.6-2.4.6-.5.2-.9.4-1.5.4-.7 0-1.8-1.7-2.3-2.6C4.7 17.5 4 15 4 13c0-2.1.4-3.7 1.3-4.7C6 7.4 6.9 7 8 7c.6 0 .8.1 1.3.3.5.3 1.3.7 2.7.7 1.3 0 2.2-.4 2.9-.7.4-.2.7-.3 1.1-.3.8 0 1.7.3 2.4.8.5.4.9.8 1.2 1.3-1.1 1-1.7 2.4-1.7 3.9 0 1.6.6 3 1.7 4-.3 1.2-1.1 2.3-1.8 3.4zM12.7 4.7l-1.4-1.4 3-3 1.4 1.4-3 3z"></path></svg>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </span>
+            <span class="path3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="112" height="112"><path d="M15.6 10L17 7.2V1h-4.8l-1.1 4.5L8 9.2V8H0v15h8v-1.1L9.7 23h10.8L24 10h-8.4zM6 21H2V10h4v11zm12.9 0h-8.6L8 19.5v-7.1l4.9-5.9.9-3.5H15v3.8L12.4 12h9l-2.5 9z"></path></svg>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </span>
+        </div>
     </section>
     <section class="team">
         <h1>Our Team</h1>
-        <span class="one">
-            <img src="images/07.jpg" alt="">
-            <h4>Doctor</h4>
-            <h1>John Clark</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur.</p>
-            <ul class="socialmedia2">
-                <li class="call"><a href="http://">Facebook</a></li>
-                <li class="facebook"><a href="http://">Twitter</a></li>
-                <li class="instagram"><a href="http://">Gmail</a></li>
-            </ul>
-        </span>
-        <span class="two">
+        <div id="team">
+            <span class="one">
+                <img src="images/07.jpg" alt="">
+                <span id="one">
+                    <h4 style="color: white;">Doctor</h4>
+                    <h2 style="color: white;">John Clark</h2>
+                    <p style="color: white;">Lorem ipsum dolor sit amet, consectetur.</p>
+                    <ul class="socialmedia2" style="color: white;">
+                        <li class="facebook" style="color: white;"><a href="http://"><svg width="24" height="24" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z" style="color:white;"></path></svg></a></li>
+                        <li class="twitter" style="color: white;"><a href="http://"><svg width="24" height="24" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z" style="color:white;"></path></svg></a></li>
+                        <li class="gmail" style="color: white;"><a href="http://"><svg width="24" height="24" viewBox="0 0 2304 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M1437 913q0 208-87 370.5t-248 254-369 91.5q-149 0-285-58t-234-156-156-234-58-285 58-285 156-234 234-156 285-58q286 0 491 192l-199 191q-117-113-292-113-123 0-227.5 62t-165.5 168.5-61 232.5 61 232.5 165.5 168.5 227.5 62q83 0 152.5-23t114.5-57.5 78.5-78.5 49-83 21.5-74h-416v-252h692q12 63 12 122zm867-122v210h-209v209h-210v-209h-209v-210h209v-209h210v209h209z" style="color:white;"></path></svg></a></li>
+                    </ul>
+                </span>
+            </span>
+            <span class="two">
+                <img src="images/04.jpg" alt="">
+                <span id="two">
+                    <h4 style="color: white;">Therapist</h4>
+                    <h2 style="color: white;">Karin Miller</h2>
+                    <p style="color: white;">Lorem ipsum dolor sit amet, consectetur.</p>
+                    <ul class="socialmedia2" style="color: white;">
+                        <li class="facebook" style="color: white;"><a href="http://"><svg width="24" height="24" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z" style="color:white;"></path></svg></a></li>
+                        <li class="twitter" style="color: white;"><a href="http://"><svg width="24" height="24" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z" style="color:white;"></path></svg></a></li>
+                        <li class="gmail" style="color: white;"><a href="http://"><svg width="24" height="24" viewBox="0 0 2304 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M1437 913q0 208-87 370.5t-248 254-369 91.5q-149 0-285-58t-234-156-156-234-58-285 58-285 156-234 234-156 285-58q286 0 491 192l-199 191q-117-113-292-113-123 0-227.5 62t-165.5 168.5-61 232.5 61 232.5 165.5 168.5 227.5 62q83 0 152.5-23t114.5-57.5 78.5-78.5 49-83 21.5-74h-416v-252h692q12 63 12 122zm867-122v210h-209v209h-210v-209h-209v-210h209v-209h210v209h209z" style="color:white;"></path></svg></a></li>
+                    </ul>
+                    </ul>
+                </span>
+            </span>
+        </div>
+        <!-- <span class="two">
             <img src="images/04.jpg" alt="">
             <h4>Doctor</h4>
             <h1>Karin Miller</h1>
@@ -159,36 +198,34 @@
                 <li class="facebook"><a href="http://">Twitter</a></li>
                 <li class="instagram"><a href="http://">Gmail</a></li>
             </ul>
-        </span>
+        </span> -->
     </section>
     <section class="testimonials">
-        <h1>Testimonials</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis rutrum metus, ut posuere neque. Fusce faucibus ex non justo pharetra tempus. Integer quam nibh, eleifend velit lobortis, dapibus porttitor metus. In suscipit justo ipsum, aliquet ipsum cursus et.
-        </p>
-        <p>
-            James M.D. - Our Client
-        </p>
+        <div class="testimonial">
+            <h1>Testimonials</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis rutrum metus, ut posuere neque. Fusce faucibus ex non justo pharetra tempus. Integer quam nibh, eleifend velit lobortis, dapibus porttitor metus. In suscipit justo ipsum, aliquet ipsum cursus et.
+            </p>
+            <p style="text-align: end; color: #bb4052; font-family:'Vidaloka', serif;">
+                <i>James M.D. - Our Client</i>
+            </p>
+        </div>
     </section>
     <section class="ask">
-        <p>
-            Want to share your story with us? We’d love to hear from you.
+        <p style="font-family:'Vidaloka',serif; font-size:xx-large;">
+            Want to share your story with us? <br>We’d love to hear from you.
         </p>
-        <button>
-            Tell your story -->
-        </button>
+        <button>Tell your story <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M24 11l-6.7 6.7-1.4-1.4 4.3-4.3H0v-2h20.2l-4.3-4.3 1.4-1.4L24 11z"></path></svg></button>
     </section>
     <section class="contact">
         <span class="left4">
-            <p>get in touch</p>
-            <h2>Contact Us</h2>
+            <p style="font-size:x-large;">get in touch</p>
+            <h2 style="font-family:'Vidaloka', srif; font-size: xxx-large; font-weight: 300;">Contact Us</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada ut magna vel porta. Praesent consectetur molestie finibus. Fusce vitae urna in quam malesuada rutrum.</p>
             <form action="">
                 <input type="text" name="Name" placeholder="Name">
                 <input type="text" name="Email" placeholder="Email">
-                <button>
-                    Get It Now
-                </button>
+                <button style="width: 100%; font-size:large;">Get It now</button>
             </form>
         </span>
         <span class="right4">
@@ -206,7 +243,7 @@
             <li>Help</li>
         </ul>
         <p>&#169; Mobirise 2020</p>
-        <p>Make the first step...</p>
+        <p style="color:#bb4052; font-size: 20px;">Make the first step...</p>
         <button>Get Started</button>
     </footer>
 </body>
